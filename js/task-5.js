@@ -49,6 +49,6 @@ switch (country) {
 
 country = country[0].toUpperCase() + country.substring(1);
 
-let messang = `Доставка в ${country} будет стоить ${costOfDelivery} кредитов`;
+const messang = `Доставка в ${country} будет стоить ${costOfDelivery} кредитов`;
 
 alert(messang);
