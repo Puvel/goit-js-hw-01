@@ -22,33 +22,41 @@ let country = recipientCountry.toLowerCase();
 
 let costOfDelivery;
 
+let messang;
+
 switch (country) {
   case 'китай':
     costOfDelivery = 100;
+    country = country[0].toUpperCase() + country.substring(1);
+    messang = `Доставка в ${country} будет стоить ${costOfDelivery} кредитов`;
     break;
 
   case 'чили':
     costOfDelivery = 250;
+    country = country[0].toUpperCase() + country.substring(1);
+    messang = `Доставка в ${country} будет стоить ${costOfDelivery} кредитов`;
     break;
 
   case 'австралия':
     costOfDelivery = 170;
+    country = country[0].toUpperCase() + country.substring(1);
+    messang = `Доставка в ${country} будет стоить ${costOfDelivery} кредитов`;
     break;
 
   case 'индия':
     costOfDelivery = 80;
+    country = country[0].toUpperCase() + country.substring(1);
+    messang = `Доставка в ${country} будет стоить ${costOfDelivery} кредитов`;
     break;
 
   case 'ямайка':
     costOfDelivery = 120;
+    country = country[0].toUpperCase() + country.substring(1);
+    messang = `Доставка в ${country} будет стоить ${costOfDelivery} кредитов`;
     break;
 
   default:
-    alert('В вашей стране доставка не доступна');
+    messege = 'В вашей стране доставка не доступна';
 }
-
-country = country[0].toUpperCase() + country.substring(1);
-
-const messang = `Доставка в ${country} будет стоить ${costOfDelivery} кредитов`;
 
 alert(messang);
